@@ -1,0 +1,113 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-08T08:48:42.231Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12698757500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify that sorting in the Online Store is working as expected",
+        "description": "",
+        "id": "online-store;verify-that-sorting-in-the-online-store-is-working-as-expected",
+        "after": [
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26172010400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to access to \"Product\" module - \"OnlineStore\" submodel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Product\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"OnlineStore\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_access_to_module_submodel(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3494268900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be able to select a sorting which name is \"Sort By Popularity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sort By Popularity\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_select_a_sorting_which_name_is(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163889300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should be able to see first result is \"Sterile standard conical bioprinting nozzles, 50 pieces\" and \"price\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sterile standard conical bioprinting nozzles, 50 pieces\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"price\"",
+                  "offset": 105
+                }
+              ],
+              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_see_first_result_is_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SortByPopularity"
+          }
+        ]
+      }
+    ],
+    "name": "Online store",
+    "description": "",
+    "id": "online-store",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/OnlineStore.feature",
+    "tags": []
+  }
+]
