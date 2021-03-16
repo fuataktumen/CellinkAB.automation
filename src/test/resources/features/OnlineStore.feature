@@ -12,3 +12,13 @@ Feature:Online store
     Given User should be able to access to "Product" module - "OnlineStore" submodel
     When User should be able to select a sorting which name is "Sort By Popularity"
     Then User should be able to see first result is "Sterile standard conical bioprinting nozzles, 50 pieces" and "price"
+
+  @productSearch
+
+  Scenario: Verify that productSearch in the Online Store is working as expected
+
+    Given User should be able to access to "Product" module - "OnlineStore" submodel
+    When User should be able to send "al" under the PRODUCT SEARCH;
+    Then User should be  able to see "scRapid 384" product under the Product Search
+
+

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-08T08:48:42.231Z",
+        "start_timestamp": "2021-03-16T07:27:46.397Z",
         "before": [
           {
             "result": {
-              "duration": 12698757500,
+              "duration": 8120555100,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,13 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Verify that sorting in the Online Store is working as expected",
+        "line": 3,
+        "name": "Verify that user should be able to navigate HAMA Lyophilizate under the BioinksBiomaterialsReagents",
         "description": "",
-        "id": "online-store;verify-that-sorting-in-the-online-store-is-working-as-expected",
+        "id": "bioinksbiomaterialsreagents;verify-that-user-should-be-able-to-navigate-hama-lyophilizate-under-the-bioinksbiomaterialsreagents",
         "after": [
           {
             "result": {
-              "duration": 1000200,
               "status": "passed"
             },
             "match": {
@@ -35,79 +34,53 @@
         "steps": [
           {
             "result": {
-              "duration": 26172010400,
+              "duration": 16002002400,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User should be able to access to \"Product\" module - \"OnlineStore\" submodel",
+            "line": 5,
+            "name": "User should be able to access to Web Site",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Product\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"OnlineStore\"",
-                  "offset": 52
-                }
-              ],
-              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_access_to_module_submodel(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.BioPrintingStepDefinations.user_should_be_able_to_access_to_web_site()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3494268900,
+              "duration": 6663434600,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User should be able to select a sorting which name is \"Sort By Popularity\"",
+            "line": 6,
+            "name": "User should be able to navigate Product module - Bioinks Biomaterials Reagents - Materials for bioink development - Concentrated Components - HAMA Lyophilizate",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Sort By Popularity\"",
-                  "offset": 54
-                }
-              ],
-              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_select_a_sorting_which_name_is(java.lang.String)"
+              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_navigate()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 163889300,
+              "duration": 2839741400,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User should be able to see first result is \"Sterile standard conical bioprinting nozzles, 50 pieces\" and \"price\"",
+            "line": 7,
+            "name": "User should be able to click HAMA Lyophilizate product",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Sterile standard conical bioprinting nozzles, 50 pieces\"",
-                  "offset": 43
-                },
-                {
-                  "val": "\"price\"",
-                  "offset": 105
-                }
-              ],
-              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_see_first_result_is_and(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_click_hama_lyophilizate_product()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SortByPopularity"
+            "name": "@BioinksBiomaterialsReagents"
           }
         ]
       }
     ],
-    "name": "Online store",
+    "name": "BioinksBiomaterialsReagents",
     "description": "",
-    "id": "online-store",
+    "id": "bioinksbiomaterialsreagents",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/OnlineStore.feature",
+    "uri": "file:src/test/resources/features/BioinksBiomaterialsReagents.feature",
     "tags": []
   }
 ]

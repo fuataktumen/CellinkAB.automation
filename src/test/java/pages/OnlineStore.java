@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import javax.xml.xpath.XPath;
+import java.util.List;
 
 public class OnlineStore extends BasePage{
 
@@ -18,6 +19,19 @@ public class OnlineStore extends BasePage{
 
    @FindBy (xpath = "(//span[@class='woocommerce-Price-amount amount'])[1]")
     public WebElement PriceSterilestandardconicalbioprintingnozzles50pieces;
+
+   @FindBy(css="input.product-search-field")
+    public WebElement productSearch;
+
+    @FindBy(xpath="//tr[@class='entry product ']/td[@class='product-info']/a/span")
+    public List<WebElement> UnderproductSearchWithoutFirst;
+
+    @FindBy(xpath="//tr[@class='entry product first']/td[@class='product-info']/a/span")
+    public WebElement UnderproductSearchFirst;
+
+
+
+
 
 
 
