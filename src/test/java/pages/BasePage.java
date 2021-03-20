@@ -37,6 +37,13 @@ public abstract class BasePage {
     @FindBy(xpath = "(//a[text()='HAMA Lyophilizate'])[2]")
     public WebElement HAMALyophilizate ;
 
+    @FindBy(xpath = "(//a[text()='What is a bioink?'])[2]")
+    public WebElement Whatisabioink ;
+
+
+
+
+
 
 
 

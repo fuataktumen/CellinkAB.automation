@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.DashBoardPage;
-import pages.Nozzles;
+
 import pages.OnlineStore;
 import utilities.BrowserUtils;
 import utilities.ConfigurationReader;
@@ -43,9 +43,9 @@ public class OnlineStoreDefinations {
     public void user_should_be_able_to_see_and(String name, String price) {
         name = "Sterile high-precision conical bioprinting nozzles, 50 pieces";
         price = "$69.00";
-        Nozzles nozzles = new Nozzles();
-        Assert.assertEquals(name, nozzles.SterileHighPrecisionConicalBioprintingNozzles50Pieces.getText());
-        Assert.assertEquals(price, nozzles.PriceSterileHighPrecisionConicalBioprintingNozzles50Pieces.getText());
+        OnlineStore onlineStore=new OnlineStore();
+        Assert.assertEquals(name, onlineStore.SterileHighPrecisionConicalBioprintingNozzles50Pieces.getText());
+        Assert.assertEquals(price, onlineStore.PriceSterileHighPrecisionConicalBioprintingNozzles50Pieces.getText());
 
     }
 

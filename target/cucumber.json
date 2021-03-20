@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-16T07:27:46.397Z",
+        "start_timestamp": "2021-03-18T18:46:16.926Z",
         "before": [
           {
             "result": {
-              "duration": 8120555100,
+              "duration": 8480418400,
               "status": "passed"
             },
             "match": {
@@ -15,10 +15,10 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Verify that user should be able to navigate HAMA Lyophilizate under the BioinksBiomaterialsReagents",
+        "line": 10,
+        "name": "Verify that user should be able to see Search message",
         "description": "",
-        "id": "bioinksbiomaterialsreagents;verify-that-user-should-be-able-to-navigate-hama-lyophilizate-under-the-bioinksbiomaterialsreagents",
+        "id": "bioinksbiomaterialsreagents;verify-that-user-should-be-able-to-see-search-message",
         "after": [
           {
             "result": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16002002400,
+              "duration": 24497639400,
               "status": "passed"
             },
-            "line": 5,
+            "line": 12,
             "name": "User should be able to access to Web Site",
             "match": {
               "location": "stepdefinitions.BioPrintingStepDefinations.user_should_be_able_to_access_to_web_site()"
@@ -46,32 +46,62 @@
           },
           {
             "result": {
-              "duration": 6663434600,
+              "duration": 12261568100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User should be able to navigate Product module - Bioinks Biomaterials Reagents - Materials for bioink development - Concentrated Components - HAMA Lyophilizate",
+            "line": 13,
+            "name": "User should be able to access to Product module - Bioinks, Biomaterials \u0026 Reagents - WhatisABionk?",
             "match": {
-              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_navigate()"
+              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_access_to_product_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14852371700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should be able to click WhatisABionk? - Bionk Selection Guide",
+            "match": {
+              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_click_whatis_a_bionk_bionk_selection_guide()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2839741400,
+              "duration": 10273011100,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User should be able to click HAMA Lyophilizate product",
+            "line": 15,
+            "name": "User should be able to click Organoids - Liver",
             "match": {
-              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_click_hama_lyophilizate_product()"
+              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_click_organoids_liver()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5090605000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_see(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@BioinksBiomaterialsReagents"
+            "name": "@ResultMessage"
           }
         ]
       }
