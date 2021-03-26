@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.233 s - in runners.CukesRunner
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 480.693 s <<< FAILURE! - in runners.CukesRunner
+Verify that user should be able to see first Nozzles product is "Sterile standard conical bioprinting nozzles, 50 pieces"(Online store)  Time elapsed: 47.568 s  <<< FAILURE!
+java.lang.AssertionError
+

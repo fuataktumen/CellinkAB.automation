@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Tag: @Nozzles</title>
+<title>Cucumber Reports (no 1) - Tag: @NozzlesProduct5</title>
 
 </head>
 <body>
@@ -128,20 +128,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@Nozzles</td>
-          <td      class="passed"    >3</td>
-          <td >0</td>
+          <td class="tagname">@NozzlesProduct5</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="46199544000">46.199</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="39689931000">39.689</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -180,19 +180,18 @@ $(document).ready(function() {
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2355716487.html">@NOZZLESALL</a>
-       <a href="report-tag_1523285336.html">@Nozzles</a>
-       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_500124062.html">@NozzlesProduct5</a>
 </div>
 
 
-  <span class="lead-duration duration">46.199</span>
+  <span class="lead-duration duration">39.689</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Nozzle which is Sterile high-precision conical bioprinting nozzles, 50 pieces and price under the online store</span>
+  <span class="name">Verify that user should be able to see first Nozzles product is &quot;Sterile standard conical bioprinting nozzles, 50 pieces&quot;</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -201,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -223,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepdefinitions.Hooks.setup()</span>
 
-  <span class="lead-duration duration">3.691</span>
+  <span class="lead-duration duration">2.014</span>
 
           </div>
 
@@ -240,9 +239,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -252,7 +251,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -260,7 +259,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User should be able to access to <span class="argument">&quot;Product&quot;</span> module - <span class="argument">&quot;OnlineStore&quot;</span> submodel</span>
 
-  <span class="lead-duration duration">33.977</span>
+  <span class="lead-duration duration">28.261</span>
 
 </div>
 
@@ -287,7 +286,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User should be able to select a category which name is <span class="argument">&quot;Nozzles&quot;</span></span>
 
-  <span class="lead-duration duration">7.016</span>
+  <span class="lead-duration duration">6.341</span>
 
 </div>
 
@@ -310,11 +309,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">User should be able to see <span class="argument">&quot;Sterile high-precision conical bioprinting nozzles, 50 pieces&quot;</span> and <span class="argument">&quot;price&quot;</span></span>
+  <span class="name">User should be able to see fifth Nozzles product is <span class="argument">&quot;Sterile standard conical bioprinting nozzles, 50 pieces&quot;</span></span>
 
-  <span class="lead-duration duration">5.205</span>
+  <span class="lead-duration duration">5.087</span>
 
 </div>
 
@@ -322,6 +321,23 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_see_fifth_nozzles_product_is(OnlineStoreDefinations.java:193)
+	at &#10045;.User should be able to see fifth Nozzles product is &quot;Sterile standard conical bioprinting nozzles, 50 pieces&quot;(file:///C:/Users/Fuat/CellinkAB.automation/src/test/resources/features/OnlineStore.feature:68)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -341,7 +357,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -353,13 +369,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepdefinitions.Hooks.tearDown()</span>
 
-  <span class="lead-duration duration">8.076</span>
+  <span class="lead-duration duration">5.839</span>
 
           </div>
 

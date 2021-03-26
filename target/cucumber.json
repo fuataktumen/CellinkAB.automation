@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-18T18:46:16.926Z",
+        "start_timestamp": "2021-03-26T02:52:30.084Z",
         "before": [
           {
             "result": {
-              "duration": 8480418400,
+              "duration": 8610571000,
               "status": "passed"
             },
             "match": {
@@ -15,17 +15,18 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Verify that user should be able to see Search message",
+        "line": 64,
+        "name": "Verify that user should be able to see first Nozzles product is \"Sterile standard conical bioprinting nozzles, 50 pieces\"",
         "description": "",
-        "id": "bioinksbiomaterialsreagents;verify-that-user-should-be-able-to-see-search-message",
+        "id": "online-store;verify-that-user-should-be-able-to-see-first-nozzles-product-is-\"sterile-standard-conical-bioprinting-nozzles--50-pieces\"",
         "after": [
           {
             "result": {
+              "duration": 6718201300,
               "status": "passed"
             },
             "match": {
-              "location": "stepdefinitions.Hooks.cleanUp()"
+              "location": "stepdefinitions.Hooks.tearDown()"
             }
           }
         ],
@@ -34,83 +35,87 @@
         "steps": [
           {
             "result": {
-              "duration": 24497639400,
+              "duration": 32032589400,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User should be able to access to Web Site",
+            "line": 66,
+            "name": "User should be able to access to \"Product\" module - \"OnlineStore\" submodel",
             "match": {
-              "location": "stepdefinitions.BioPrintingStepDefinations.user_should_be_able_to_access_to_web_site()"
+              "arguments": [
+                {
+                  "val": "\"Product\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"OnlineStore\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_access_to_module_submodel(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 12261568100,
+              "duration": 8321916300,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User should be able to access to Product module - Bioinks, Biomaterials \u0026 Reagents - WhatisABionk?",
+            "line": 67,
+            "name": "User should be able to select a category which name is \"Nozzles\"",
             "match": {
-              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_access_to_product_module()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14852371700,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User should be able to click WhatisABionk? - Bionk Selection Guide",
-            "match": {
-              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_click_whatis_a_bionk_bionk_selection_guide()"
+              "arguments": [
+                {
+                  "val": "\"Nozzles\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_select_a_category_which_name_is(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 10273011100,
+              "duration": 5174608900,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User should be able to click Organoids - Liver",
-            "match": {
-              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_click_organoids_liver()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5090605000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User should be able to see \"message\"",
+            "line": 68,
+            "name": "User should be able to see fifth Nozzles product is \"Sterile standard conical bioprinting nozzles, 50 pieces\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"message\"",
-                  "offset": 27
+                  "val": "\"Sterile standard conical bioprinting nozzles, 50 pieces\"",
+                  "offset": 52
                 }
               ],
-              "location": "stepdefinitions.BioinksBiomaterialsReagentsStepDef.user_should_be_able_to_see(java.lang.String)"
+              "location": "stepdefinitions.OnlineStoreDefinations.user_should_be_able_to_see_fifth_nozzles_product_is(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ResultMessage"
+            "name": "@NOZZLESALL"
+          },
+          {
+            "name": "@NozzlesProduct5"
           }
         ]
       }
     ],
-    "name": "BioinksBiomaterialsReagents",
+    "name": "Online store",
     "description": "",
-    "id": "bioinksbiomaterialsreagents",
+    "id": "online-store",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BioinksBiomaterialsReagents.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/OnlineStore.feature",
+    "tags": [
+      {
+        "name": "@NOZZLESALL",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

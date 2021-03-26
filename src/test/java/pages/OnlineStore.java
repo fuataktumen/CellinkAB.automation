@@ -29,11 +29,12 @@ public class OnlineStore extends BasePage{
     @FindBy(xpath="//tr[@class='entry product first']/td[@class='product-info']/a/span")
     public WebElement UnderproductSearchFirst;
 
-    @FindBy(xpath= "(//h2[@class='woocommerce-loop-product__title'])[2]")
-    public WebElement SterileHighPrecisionConicalBioprintingNozzles50Pieces;
 
-    @FindBy(xpath= "(//span[@class='woocommerce-Price-amount amount'])[2]")
-    public WebElement PriceSterileHighPrecisionConicalBioprintingNozzles50Pieces;
+
+    @FindBy(xpath= "//p[@class='woocommerce-result-count']")
+    public WebElement NozzlesNumberResult;
+
+
 
 
 
